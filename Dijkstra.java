@@ -74,19 +74,19 @@ public class Dijkstra {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
-        int nodos, origen, destino, i, j; 
+        int nodos, origen, destino, i, j; // definimos variables
         
         System.out.println("Ingrese el número de nodos: ");
         nodos = sc.nextInt();
-        int rutas[][] = new int[nodos][nodos];
+        int rutas[][] = new int[nodos][nodos]; //inicializamos la matriz con el tamaño del nodo
       
-        for (i =0; i < rutas.length; i ++) 
+        for (i =0; i < rutas.length; i ++) //recorremos la matriz
         {
             for (j=0; j < rutas[i].length; j++) 
             {
                 if(i == j)
                 {
-                    rutas[i][j] = 0;
+                    rutas[i][j] = 0; //si la dirección es la misma el resultado es 0
                 }
                 else
                 {
